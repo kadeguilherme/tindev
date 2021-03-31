@@ -1,8 +1,15 @@
+const axios = require('axios');
+
 module.exports = {
     store(req,res) { 
-        console.log(req.body.username);
-        //Poder ser o debaixo usando a desestruturação
         const { username } = req.body;
+
+        const response = axios.get(`https://api.github.com/users/${username}`);
+         
+        //As informações no axios esta dentro do data
+        console.log(response.data);
+
+
         return res.json({ok: true });
     }
 }
