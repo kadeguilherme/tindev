@@ -14,11 +14,14 @@ const DevSchema = new Schema({
         type: String,
         required: true,
     },
-    Like:[{
+
+  
+    likes: [{
         type: Schema.Types.ObjectId,
         ref: 'Dev',
     }],
-    Dislike:[{
+
+    dislike: [{
         type: Schema.Types.ObjectId,
         ref: 'Dev',
     }],
