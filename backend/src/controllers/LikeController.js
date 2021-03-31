@@ -5,6 +5,8 @@ module.exports = {
         console.log(req.params.devId);
         console.log(req.headers.user);
 
+        
+
         return res.json({ok:true });
     }
 };
