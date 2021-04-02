@@ -5,16 +5,15 @@ import './login.css';
 export default function Login(){
     return (
    <div className = "login-container">
-
+       
+        <img src = {logo} alt = 'Tindev'/>
        <form>
-       <img src = {logo} alt = 'Tindev'/>
-       <input 
-       placeholder = "Digite seu usuário do GitHub"
-       />
-       <button>
+        <input 
+        placeholder = "Digite seu usuário do GitHub"
+        />
+        <button>
            Enviar
-       </button>
-
+        </button>
        </form>
    </div>
 
