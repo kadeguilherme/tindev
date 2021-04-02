@@ -25,13 +25,16 @@ export default function Main({ match }){
         await api.post(`/devs/${id}/likes`, null, {
             headers:{ user: match.params.id },
         })
+
+        setUsers(users.filter(user => user._id !== id))
     }
 
-    
-    async function handleDislike(id){
-       await api.post(`/devs/${id}/dislikes`, null, {
-           headers:{ user: match.params.id },
-       })
+    async function handleDislike(id) {
+        await api.post(`/devs/${id}/dislikes`, null, {
+            headers: {  user: match.params.id },
+        })
+
+        setUsers(users.filter(user => user._id !== id));
     }
 
 
