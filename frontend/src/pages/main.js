@@ -21,99 +21,44 @@ export default function Main({ match }){
         loadUsers();
     },[match.params.id]);
 
+    async function handleLike(id){
+        await api.post(`/devs/${id}/likes`, null, {
+            headers:{ user: match.params.id },
+        })
+    }
+
+    
+    async function handleDislike(id){
+       await api.post(`/devs/${id}/dislikes`, null, {
+           headers:{ user: match.params.id },
+       })
+    }
 
 
     return(
         <div className = 'main-container'>
             <img src = { logo } alt = 'Tindev'/>
         <ul>
-            <li>
-                <img src='https://avatars.githubusercontent.com/u/2254731?v=4'/>
-                <footer>
-                    <strong>
-                        Diego Rockseats
-                        <p>
-                        CTO at @Rocketseat. Passionate about education and changing people's lives through programming.
-                        </p>
-                    </strong>
-                </footer>
+            {users.map(user => (
+                 <li key={user._id}>
+                 <img src={user.avatar} alt ="avatar"/>
+                 <footer>
+                     <strong>{user.name}</strong>
+                         <p>{user.bio}</p>
+                 </footer>
+                 <div className = 'buttons'>
+                     <button type = 'button' onClick= {() => handleLike(user._id)}>
+                         <img src = {like} alt='like'/>
+                     </button>
 
-                <div className = 'buttons'>
-                    <button type = 'button'>
-                        <img src = {like} alt='like'/>
-                    </button>
+                     <button type = 'button'  onClick= {() => handleDislike(user._id)}>
+                         <img src = {dislike} alt='Dislike'/>
+                     </button>
+                 </div>
+             </li>
+            ))}
+           
 
-                    <button type = 'button'>
-                        <img src = {dislike} alt='Dislike'/>
-                    </button>
-                </div>
-            </li>
-
-            <li>
-                <img src='https://avatars.githubusercontent.com/u/2254731?v=4'/>
-                <footer>
-                    <strong>
-                        Diego Rockseats
-                        <p>
-                        CTO at @Rocketseat. Passionate about education and changing people's lives through programming.
-                        </p>
-                    </strong>
-                </footer>
-
-                <div className = 'buttons'>
-                    <button type = 'button'>
-                        <img src = {like} alt='like'/>
-                    </button>
-
-                    <button type = 'button'>
-                        <img src = {dislike} alt='Dislike'/>
-                    </button>
-                </div>
-            </li>
-
-            <li>
-                <img src='https://avatars.githubusercontent.com/u/2254731?v=4'/>
-                <footer>
-                    <strong>
-                        Diego Rockseats
-                        <p>
-                        CTO at @Rocketseat. Passionate about education and changing people's lives through programming.
-                        </p>
-                    </strong>
-                </footer>
-
-                <div className = 'buttons'>
-                    <button type = 'button'>
-                        <img src = {like} alt='like'/>
-                    </button>
-
-                    <button type = 'button'>
-                        <img src = {dislike} alt='Dislike'/>
-                    </button>
-                </div>
-            </li>
-
-            <li>
-                <img src='https://avatars.githubusercontent.com/u/2254731?v=4'/>
-                <footer>
-                    <strong>
-                        Diego Rockseats
-                        <p>
-                        CTO at @Rocketseat. Passionate about education and changing people's lives through programming.
-                        </p>
-                    </strong>
-                </footer>
-
-                <div className = 'buttons'>
-                    <button type = 'button'>
-                        <img src = {like} alt='like'/>
-                    </button>
-
-                    <button type = 'button'>
-                        <img src = {dislike} alt='Dislike'/>
-                    </button>
-                </div>
-            </li>
         </ul>
 
         
