@@ -6,9 +6,9 @@
 </h1>
 
 <h1 align="center">
-  <img align="center" src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/home-page.png" width = '1000'>
-  <img align="left" src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/home-page-2.png" width = '450'>
-  <img  align="left" src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/match.png" width = '450'>
+  <img  src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/home-page.png" width = '1000'>
+  <img  src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/home-page-2.png" width = '450'>
+  <img   src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/match.png" width = '450'>
 </h1>
 
 <br /><br /><br /><br /><br /><br /><br />
