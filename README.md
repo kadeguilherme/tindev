@@ -25,7 +25,8 @@
   Para você ter o nubank clone no seu celular digite o seguinte comando no seu terminal
   
   1. Clone o repositório
-  ```bashhttps://github.com/kadeguilherme/tindev.git
+  ```
+  bashhttps://github.com/kadeguilherme/tindev.git
 ```
   2. Abrar a pasta
   ```bash
