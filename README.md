@@ -11,7 +11,7 @@
   <img   src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/match.png" width = '450'>
 </h1>
 
-<br /><br /><br /><br /><br /><br /><br />
+
 
  ## 🚀 Tecnologia 
 - ⚛️ **React Js** 
