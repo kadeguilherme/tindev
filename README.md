@@ -7,8 +7,8 @@
 
 <h1 align="center">
   <img  src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/home-page.png" width = '1000'>
-  <img  src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/home-page-2.png" width = '450'>
-  <img   src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/match.png" width = '450'>
+  <img  src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/home-page-2.png" width = '440'>
+  <img   src="https://github.com/kadeguilherme/tindev/blob/master/frontend/src/assets/match.png" width = '440'>
 </h1>
 
 
@@ -34,16 +34,16 @@
 ```
   3. Instale as dependencias
   ```bash
-    Run yarn to install dependencies
+    Run yarn para instalar as depedencias 
 ```
 
 ### Iniciar o servidor de back-end
 
-1. Run `yarn dev` to start the server
+1. Run `yarn dev` iniciar o servidor
 
 ### Iniciar o servidor de front-end
 
-1. Run `yarn start` to start the web application
+1. Run `yarn start` iniciar o aplicativo web
 
 ## Feito com ❤
 
